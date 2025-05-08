@@ -1,64 +1,76 @@
-<body style="background-color:rgb(200,200,200);">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nick Choksi</title>
+  <style>
+    body {
+      background-color: rgb(200, 200, 200);
+      font-family: sans-serif;
+      margin: 1rem;
+    }
+    /* Float the main portrait */
+    .portrait {
+      float: left;
+      margin-right: 1rem;
+      margin-bottom: 1rem;
+      width: 313px;
+      height: 424px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+    /* Float the research box next to the portrait */
+    .research {
+      float: left;
+      width: calc(100% - 333px); /* portrait width + margin = 313 + 20px */
+      margin-bottom: 1rem;
+    }
+    /* Clear floats before the next section */
+    .clearfix {
+      clear: both;
+    }
+    /* Optional styling to keep things tidy */
+    h1, h3 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
 
-
-
-<title>Nick Choksi</title>
-
-
-  <h1>
-    Nick Choksi <br>
-  </h1>
+  <h1>Nick Choksi</h1>
   <h3>
-    Contact: <br>
-    nchoksi@berkeley.edu or find me in the nearest burrito joint<br> 
+    Contact:<br>
+    <a href="mailto:nchoksi@berkeley.edu">nchoksi@berkeley.edu</a>  
+    or find me in the nearest burrito joint
   </h3>
 
+  <!-- your portrait -->
+  <img src="me.jpeg" alt="Nick Choksi" class="portrait">
 
-<h4>
-</h4>
-  <p style="float: left;"><img src="me.jpeg" align='left' width=313 height=424 style="padding-right: 10px;">
-    I'm a finishing graduate student and NSF Fellow at UC Berkeley. In Fall 2025, I'll be starting as a 51 Pegasi b fellow at Caltech. For my PhD, I worked with  <a href="https://w.astro.berkeley.edu/~echiang/">Eugene Chiang</a>. I also received my undergraduate degrees in physics and astrophysics from Berkeley in 2019. As an undergrad I mostly worked with <a href="http://www-personal.umich.edu/~ognedin/index.html">Oleg Gnedin</a> on modeling the formation of stellar clusters across cosmic time.  <br>   <br>  <br> <a href="https://astro.berkeley.edu/">Berkeley Astronomy</a>  <br>  <a href="https://physics.berkeley.edu/">Berkeley Physics</a>  
-  </p>
+  <!-- Research floats next to the portrait -->
+  <div class="research">
+    <h3>Research</h3>
+    <p>
+      Theoretical astrophysics. Areas of expertise include celestial mechanics, planet formation, planet–disk hydrodynamic simulations, chondrule formation, globular clusters.<br>
+      <a href="cv.pdf">CV</a> and publications  
+      (<a href="https://ui.adsabs.harvard.edu/search/q=author%3A(%22%5Echoksi%2C%20nick%22)&sort=date%20desc%2C%20bibcode%20desc&p_=0">first-author</a>, 
+       <a href="https://ui.adsabs.harvard.edu/search/q=author%3A(%22choksi%2C%20nick%22)&sort=date%20desc%2C%20bibcode%20desc&p_=0">all</a>).
+    </p>
+  </div>
 
-<p> 
-  <h3>
-  Research <br>
-  </h3>
-   Theoretical astrophysics. Areas of expertise include celestial mechanics, planet formation, planet-disk hydrodynamic simulations, chondrule formation, globular clusters <br> 
-     <a href="cv.pdf">CV</a> and publications (<a href="https://ui.adsabs.harvard.edu/search/q=author%3A(%22%5Echoksi%2C%20nick%22)&sort=date%20desc%2C%20bibcode%20desc&p_=0">first-author</a> and <a href="https://ui.adsabs.harvard.edu/search/q=author%3A(%22choksi%2C%20nick%22)&sort=date%20desc%2C%20bibcode%20desc&p_=0">all</a>). <br> <br>
-     Some past talks: <!--<br><br><a href="testing_planet_formation.pdf">Testing planet formation from the ultraviolet to the millimeter</a><br> -->
-     <!--<a href="/~nchoksi/repulsion_demographics.key">Sub-Neptune Formation: The View from Resonant Planets</a> -->  <br> <a href="/~nchoksi/gc_model.pdf">Are globular clusters simple after all?</a> <br><a href="/~nchoksi/bhgc_lunch2018.pdf">The star clusters that make black hole binaries across cosmic time</a> 
+  <!-- clear both floats -->
+  <div class="clearfix"></div>
 
-
-</p>
-
-
-<h3>
-  Personal
-</h3>
-<div>
-  <p style="float: left;"><img src="hank.jpg" align='left' width=250 height=155 style="padding-right: 10px;">
-    I grew up in the suburbs of southeastern Michigan before I ran away from the cold and moved to Berkeley. In my free time, I play tennis, dabble in the nerd grab bag of books and television, and play with my dog, Hank.
-  </p>
-</div>
-
-
-
-<h4>
-<!--  Teaching materials
-</h4>
-<p>
-<a href="/~nchoksi/c10_materials/">Astro C10 (Intro to Astronomy)</a><br> <br>
-
-</p>
-<p>
-<a href="/~nchoksi/7a_materials/">Astro 7A (Intro to Astrophysics I)</a><br> <br>
-
-</p>
-<p>
-<a href="/~nchoksi/7b_materials/">Astro 7B (Intro to Astrophysics II)</a><br> <br>
-
-</p> -->
-
+  <!-- Personal section starts below -->
+  <h3>Personal</h3>
+  <div>
+    <img src="hank.jpg" alt="Hank the dog" style="float:left; margin-right:1rem; width:250px; height:155px; object-fit:cover; border-radius:4px;">
+    <p>
+      I grew up in the suburbs of southeastern Michigan before I ran away from the cold and moved to Berkeley. 
+      In my free time, I play tennis, dabble in the nerd grab bag of books and television, and play with my dog, Hank.
+    </p>
+    <div class="clearfix"></div>
+  </div>
 
 </body>
+</html>
